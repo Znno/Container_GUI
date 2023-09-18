@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#include <vector>
+#pragma hdrstop
+
+#include "Create.h"
+using namespace std;
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TCreateForm *CreateForm;
+//---------------------------------------------------------------------------
+__fastcall TCreateForm::TCreateForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+extern int arrsize;
+vector <long long> arr;
+int temp = 0;
+void __fastcall TCreateForm::AddButtonClick(TObject *Sender)
+{
+
+	if (temp<arrsize) {
+		int elementValue = StrToLong(ValueEdit->Text);
+		ArrayList->Items->Add(elementValue);
+		arr.push_back(elementValue);
+		temp++;
+	}
+
+	if (temp==arrsize) {
+		ValueEdit->Enabled = 0;
+		AddButton->Enabled = 0;
+        ValueEdit->Clear();
+	}
+
+
+}
+//---------------------------------------------------------------------------

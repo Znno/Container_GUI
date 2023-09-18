@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/12/13 12:34:31.000.957,=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/12/13 12:34:32.000.223,=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 12:36:44.000.534,=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/12/13 12:36:44.000.612,=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 12:42:46.000.026,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Main.h=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2022/12/13 12:42:46.000.026,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Main.cpp=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 12:42:46.000.026,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Main.dfm=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/12/13 12:42:56.000.270,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Project1PCH1.h=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/12/13 12:43:00.000.730,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Project1.cbproj=C:\Users\Saifaldin Elabyad\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2022/12/13 12:45:09.000.661,=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 12:45:45.000.594,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Create.h=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.h</Transaction>
+    <Transaction>2022/12/13 12:45:45.000.594,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Create.cpp=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 12:45:45.000.594,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Create.dfm=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.dfm</Transaction>
+    <Transaction>2022/12/13 13:03:40.000.952,=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 13:04:37.000.317,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Edit.h=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.h</Transaction>
+    <Transaction>2022/12/13 13:04:37.000.317,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Edit.cpp=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 13:04:37.000.317,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Edit.dfm=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.dfm</Transaction>
+    <Transaction>2022/12/13 13:31:13.000.085,=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.cpp</Transaction>
+    <Transaction>2022/12/13 13:31:59.000.705,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Display.dfm=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.dfm</Transaction>
+    <Transaction>2022/12/13 13:31:59.000.705,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Display.h=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.h</Transaction>
+    <Transaction>2022/12/13 13:31:59.000.705,C:\Users\Saifaldin Elabyad\Desktop\TestProject\Display.cpp=C:\Users\Saifaldin Elabyad\Desktop\TestProject\Unit1.cpp</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

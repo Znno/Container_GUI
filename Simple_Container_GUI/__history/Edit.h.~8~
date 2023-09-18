@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+
+#ifndef EditH
+#define EditH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TEditForm : public TForm
+{
+__published:	// IDE-managed Components
+	TEdit *SearchByIndex;
+	TButton *SearchByIButton;
+	TEdit *SearchValueEdit;
+	TButton *SearchByValueBtn;
+	TEdit *DeleteByValueEdit;
+	TButton *DeleteButton;
+	TButton *DisplayButton;
+	void __fastcall SearchByIButtonClick(TObject *Sender);
+    void __fastcall SearchByValueButtonClick(TObject *Sender);
+	void __fastcall DeleteButtonClick(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TEditForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TEditForm *EditForm;
+//---------------------------------------------------------------------------
+#endif

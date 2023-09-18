@@ -1,0 +1,154 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+#include <vector>
+
+#include "Edit.h"
+#include "Display.h"
+using namespace std;
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TEditForm *EditForm;
+//---------------------------------------------------------------------------
+__fastcall TEditForm::TEditForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+extern vector <int> arr;
+
+void __fastcall TEditForm::SearchByIButtonClick(TObject *Sender)
+{
+	int searchIndex = StrToInt(SearchByIndex->Text);
+	if (searchIndex<arraySize) {
+		ShowMessage("Element found with value " + IntToStr(arr[searchIndex]));
+	} else {
+		ShowMessage("Out of bounds!!");
+	}
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TEditForm::SearchByValueButtonClick(TObject *Sender)
+{
+	int searchValue = StrToInt(SearchValueEdit->Text);
+	for (int i=0;i<arr.size();++i) {
+		if (arr[i]==searchValue) {
+		   ShowMessage("Element found in index #" + IntToStr(i));
+		   break;
+		}
+		if (i==arr.size()-1){
+			ShowMessage("Element Not Found!!");
+		}
+	}
+
+}
+void __fastcall TEditForm::DeleteButtonClick(TObject *Sender)
+{
+	int deleteValue = StrToInt(DeleteByValueEdit->Text);
+	int flag = 0;
+	/*
+	for (int i=0;i<arr.size();++i) {
+		if (deleteValue==arr[i]) {
+			for(;i<arr.size()-1;i++) {
+				arr[i]= arr[i+1];
+			}
+			arr.size()--;
+            flag = 1;
+		}
+	}
+	*/
+	for (int i=0;i<arr.size();++i) {
+		if (arr[i]==deleteValue) {
+			arr[i] = 0;
+			flag++;
+		}
+	}
+
+	if (flag==0){
+		ShowMessage("Element Not Found!");
+	} else {
+		ShowMessage("Element(s) with value " + IntToStr(deleteValue)+ " had been Deleted!");
+    }
+}
+//---------------------------------------------------------------------------
+void __fastcall TEditForm::DisplayButtonClick(TObject *Sender)
+{
+	DisplayForm->DisplayArrayList->Clear();
+	for (int i=0;i<arr.size();i++){
+		DisplayForm->DisplayArrayList->Items->Add(arr[i]);
+	}
+	DisplayForm->Show();
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TEditForm::largeButtonClick(TObject *Sender)
+{
+	int maxi = arr[0];
+	for (int i=1;i<arr.size();++i) {
+		if (arr[i]>maxi) {
+			maxi = arr[i];
+		}
+	}
+	ShowMessage("Largest number is " + IntToStr(maxi));
+}
+//---------------------------------------------------------------------------
+void __fastcall TEditForm::smallButtonClick(TObject *Sender)
+{
+	int small = arr[0];
+	for (int i=1;i<arr.size();++i) {
+		if (arr[i]<small) {
+			small = arr[i];
+		}
+	}
+	ShowMessage("Smallest number is " + IntToStr(small));
+}
+//---------------------------------------------------------------------------
+void __fastcall TEditForm::SumButtonClick(TObject *Sender)
+{
+	int sum = 0;
+	for (int i=0;i<arr.size();++i) {
+		sum += arr[i];
+	}
+	ShowMessage("Sum is " + IntToStr(sum));
+}
+//---------------------------------------------------------------------------
+void __fastcall TEditForm::MultButtonClick(TObject *Sender)
+{
+	int multi = 1;
+	for (int i=0;i<arr.size();++i) {
+		multi *= arr[i];
+	}
+	ShowMessage("multiplication is " + IntToStr(multi));
+}
+//---------------------------------------------------------------------------
+void __fastcall TEditForm::Button1Click(TObject *Sender)
+{
+	int deleteIndex = StrToInt(DeleteByIndexEdit->Text);
+	if (deleteIndex<arr.size()) {
+		arr[deleteIndex] = 0;
+		ShowMessage("Element with index #"+IntToStr(deleteIndex)+" had been deleted!");
+	} else {
+		ShowMessage("Out of bounds!!");
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TEditForm::Button2Click(TObject *Sender)
+{
+
+	for(int i {1};i<arr.size();i++) {
+		int key=arr[i];
+		int j=i-1;
+		while(j>=0&&arr[j]>key) {
+			arr[j+1]=arr[j];
+			j--;
+		}
+		arr[j+1]=key;
+	}
+    ShowMessage("Array Had Been Sorted using Insertion Sort Method!");
+}
+//---------------------------------------------------------------------------
+

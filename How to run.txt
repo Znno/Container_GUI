@@ -1,0 +1,5 @@
+To open the executable file:GO TO Simple container GUI ->Win32->Release->Simple Container System.exe
+
+
+
+To open the source code:Simple Container System->Simple Container System.cbproj
