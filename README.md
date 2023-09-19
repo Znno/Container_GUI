@@ -1,6 +1,10 @@
-# Container GUI
+<h1 align="center">Container GUI</h1>
+<div align= "center">
+  <h4>Simulate the Container operations  using GUI with C++. </h4>
+</div>
 
-Simulate the Container operations  using GUI with C++.
+<div align= "center"><img src="https://github.com/Znno/Container_GUI/blob/master/ContPhoto.png"/></div>
+
 
 ## Getting Started
 
