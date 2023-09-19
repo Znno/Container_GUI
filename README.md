@@ -19,3 +19,7 @@ Simulate the Container operations  using GUI with C++.
 
 ## Possible future improvements
 * I will try to make it much more fancy with the UI, shapes of the buttons, add more useful operations and etc.
+## How to run and source code
+* To open the executable file:GO TO Simple container GUI ->Win32->Release->Simple Container System.exe
+* To open the source code:Simple Container System->Simple Container System.cbproj
+
