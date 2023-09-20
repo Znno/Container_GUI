@@ -5,14 +5,6 @@
 
 <div align= "center"><img src="https://github.com/Znno/Container_GUI/blob/master/ContPhoto.png"/></div>
 
-
-## Getting Started
-
-### Usage
-
-* To open the executable file:GO TO Simple container GUI ->Win32->Release->Simple Container System.exe
-* To open the source code:Simple Container System->Simple Container System.cbproj
-
 ## The logic
 
 * We add data to the container and manipulate it with c++ code by some buttons.
